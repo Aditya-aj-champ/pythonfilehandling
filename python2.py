@@ -21,7 +21,7 @@ def readfileandfolder():
     for i,v in enumerate(folders):
         print(f"{i}:{v}")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")   
-#3     
+#3 This function use to update the old folder name
 def updatefoldername():
         oldname=input("plz tell old file name :-")
         path = Path(oldname)
@@ -30,7 +30,7 @@ def updatefoldername():
             print("~~~~~~~~~~~~Done~~~~~~~~~~~~~~~") 
         else:
             print("~~~~~~~~~~~~~~~file dosent exist~~~~~~~~~~~~~~~")           
-#4
+#4 for Deleating the file 
 def deletefolder():
     foldername = input("plese tell me the existing folder name that you want to delete :- ")
     path = Path(foldername)
@@ -40,9 +40,9 @@ def deletefolder():
     else:
         print(f"xxxxxxxxxxxxxxx {foldername} file dosent exist xxxxxxxxxxxxxx\nplz enter correct file name")  
 
-#5
+#5 This function is use to create a file.
 def createfile():
-    filepath = Path(input("plz Enter the file name :-"))
+    filepath = Path(input("plz Enter the file name:-"))
     if filepath.exists():
         print(f"The file {filepath} already exists.")
     else:
@@ -51,7 +51,7 @@ def createfile():
                     fs.write(data) 
             
         print(f"The file {filepath} has been successfully created.")    
-#6
+#6 This function use to update file name, file content, add new file 
 def updatingfile():
     filepath = Path(input("plz Enter the file name :-"))
     if filepath.exists():
